@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controllers.AdministrationController">
+    <children>
+        <Button layoutX="268.0" layoutY="237.0" mnemonicParsing="false" onAction="#addBookToDb" text="Add" />
+        <Button layoutX="353.0" layoutY="237.0" mnemonicParsing="false" onAction="#removeBookFromDb" text="Remove" />
+        <TableView fx:id="searchResultsTableView" layoutX="226.0" layoutY="45.0" prefHeight="158.0" prefWidth="258.0">
+            <columns>
+                <TableColumn prefWidth="51.20001220703125" text="ISBN" />
+                <TableColumn prefWidth="86.39996337890625" text="Author" />
+                <TableColumn prefWidth="56.00006103515625" text="Title" />
+                <TableColumn prefWidth="113.5999755859375" text="Year" />
+            </columns>
+        </TableView>
+        <TextField fx:id="bookTitleTextField" layoutX="49.0" layoutY="45.0" promptText="Title" />
+        <TextField fx:id="authorFNameTextField" layoutX="49.0" layoutY="124.0" promptText="AuthorFName" />
+        <TextField fx:id="bookYearTextField" layoutX="49.0" layoutY="203.0" promptText="Year" />
+        <TextField fx:id="IsbnTextField" layoutX="49.0" layoutY="243.0" promptText="ISBN" />
+        <TextField fx:id="bookCategoryTextField" layoutX="49.0" layoutY="163.0" promptText="Category" />
+        <Text layoutX="52.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/remove book" />
+        <Button layoutX="723.0" layoutY="388.0" mnemonicParsing="false" onAction="#getOverdueLoans" text="List overdue loans" />
+        <TableView fx:id="overdueLoansTableView1" layoutX="556.0" layoutY="492.0" prefHeight="158.0" prefWidth="291.0">
+            <columns>
+                <TableColumn prefWidth="51.20001220703125" text="LoanNo" />
+                <TableColumn prefWidth="86.39996337890625" text="Author" />
+                <TableColumn prefWidth="56.00006103515625" text="Title" />
+                <TableColumn prefWidth="113.5999755859375" text="ReturnDate" />
+            </columns>
+        </TableView>
+        <Button layoutX="717.0" layoutY="301.0" mnemonicParsing="false" onAction="#setCurrentViewSearchBook" text="Logout" />
+      <TextField fx:id="authorLNameTextField2" layoutX="49.0" layoutY="84.0" promptText="AuthorLName" />
+      <Text layoutX="52.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/remove dvd" />
+      <TextField fx:id="dvdTitleTextField" layoutX="49.0" layoutY="388.0" promptText="Title" />
+      <TextField fx:id="dvdIdTextField" layoutX="50.0" layoutY="353.0" promptText="DvdId" />
+      <TextField fx:id="dvdActorLNameTextField" layoutX="50.0" layoutY="429.0" promptText="ActorLName" />
+      <TextField fx:id="dvdActorFNameTextField" layoutX="50.0" layoutY="466.0" promptText="ActorFName" />
+      <TextField fx:id="dvdCategoryTextField" layoutX="50.0" layoutY="505.0" promptText="Category" />
+      <TextField fx:id="dvdYearTextField" layoutX="51.0" layoutY="546.0" promptText="Year" />
+      <Button layoutX="242.0" layoutY="546.0" mnemonicParsing="false" onAction="#addDvdToDb" text="Add" />
+      <Button layoutX="339.0" layoutY="546.0" mnemonicParsing="false" onAction="#removeDvdFromDb" text="Remove" />
+    </children>
+</AnchorPane>

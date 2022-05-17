@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_maven2.SearchBookController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controllers.SearchBookController">
     <children>
         <Button fx:id="buttonSearchTitleTextField" layoutX="22.0" layoutY="69.0" mnemonicParsing="false" onAction="#getSearchTitleTextField" prefHeight="26.0" prefWidth="53.0" text="Title" />
         <TableView fx:id="searchResultsTableView" layoutX="289.0" layoutY="69.0" prefHeight="178.0" prefWidth="291.0">
